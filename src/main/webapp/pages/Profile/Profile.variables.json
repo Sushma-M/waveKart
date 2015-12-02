@@ -1,0 +1,247 @@
+{
+	"UserProfile": {
+		"name": "UserProfile",
+		"type": "User",
+		"isList": false,
+		"owner": "Page",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [
+			{
+				"name": "dataBinding",
+				"type": "USER",
+				"fields": [
+					{
+						"name": "id",
+						"type": "number",
+						"value": "bind:Variables.loggedInUser.dataSet.id"
+					},
+					{
+						"name": "landmark",
+						"type": "string"
+					},
+					{
+						"name": "phone",
+						"type": "string"
+					},
+					{
+						"name": "pin",
+						"type": "string"
+					},
+					{
+						"name": "email",
+						"type": "string"
+					},
+					{
+						"name": "street",
+						"type": "string"
+					},
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "productBought",
+						"type": "string"
+					},
+					{
+						"name": "password",
+						"type": "string"
+					},
+					{
+						"name": "country",
+						"type": "string"
+					},
+					{
+						"name": "city",
+						"type": "string"
+					}
+				]
+			}
+		],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"operation": "read",
+		"startUpdate": false,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"liveSource": "eshopping",
+		"ignoreCase": false,
+		"matchMode": "start",
+		"filterFields": {},
+		"category": "wm.LiveVariable",
+		"_id": "wm-UserProfile-wm.LiveVariable-1448969448290",
+		"package": "com.eshop.eshopping.User",
+		"tableName": "USER",
+		"tableType": "TABLE",
+		"propertiesMap": {
+			"columns": [
+				{
+					"fieldName": "id",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "ID",
+					"isPrimaryKey": true,
+					"notNull": true,
+					"length": 255,
+					"precision": 19,
+					"generator": "identity",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "landmark",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "LANDMARK",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"precision": 19,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "phone",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "PHONE",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 15,
+					"precision": 19,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "pin",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "PIN",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"precision": 19,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "email",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "EMAIL",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"precision": 19,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "street",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "STREET",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"precision": 19,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "name",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "NAME",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"precision": 19,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "productBought",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "PRODUCT_BOUGHT",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"precision": 19,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "password",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "PASSWORD",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"precision": 19,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "country",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "COUNTRY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"precision": 19,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "city",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "CITY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"precision": 19,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				}
+			],
+			"primaryKeys": [
+				"id"
+			],
+			"entityName": "User",
+			"fullyQualifiedName": "com.eshop.eshopping.User",
+			"tableType": "TABLE"
+		},
+		"inputFields": {}
+	}
+}
