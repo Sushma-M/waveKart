@@ -51,7 +51,6 @@ private String productBought;
 private String password;
 private String country;
 private String city;
-private String role;
 private Set<Itemorder> itemorders = new HashSet<Itemorder>(0);
 private Set<Productorder> productorders = new HashSet<Productorder>(0);
 
@@ -181,17 +180,6 @@ private Set<Productorder> productorders = new HashSet<Productorder>(0);
     
     public void setCity(String city) {
         this.city = city;
-    }
-
-    
-
-    @Column(name="`ROLE`", nullable=false)
-    public String getRole() {
-        return this.role;
-    }
-    
-    public void setRole(String role) {
-        this.role = role;
     }
 
 @OneToMany(fetch=FetchType.LAZY, cascade = {CascadeType.ALL}, mappedBy="user")

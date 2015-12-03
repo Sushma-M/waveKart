@@ -29,7 +29,6 @@
         <security:intercept-url pattern="/pages/leftnav/**" access="permitAll"/>
         <security:intercept-url pattern="/pages/rightnav/**" access="permitAll"/>
         <security:intercept-url pattern="/pages/topnav/**" access="permitAll"/>
-        <security:intercept-url pattern="/services/eshopping/**" access="permitAll"/>
         <security:intercept-url pattern="/services/security/**" access="permitAll"/>
         <security:request-cache ref="nullRequestCache"/>
         <security:custom-filter position="FORM_LOGIN_FILTER" ref="WMSecAuthFilter"/>
@@ -89,7 +88,7 @@
             <value>SELECT ID, PASSWORD, 1, EMAIL FROM USER WHERE EMAIL = ?</value>
         </property>
         <property name="authoritiesByUsernameQuery">
-            <value>SELECT ID, 'DEFAULT_NO_ROLES' FROM USER WHERE EMAIL = ?</value>
+            <value>SELECT ID, ROLE FROM USER WHERE EMAIL = ?</value>
         </property>
         <property name="usernameBasedPrimaryKey">
             <value>true</value>
