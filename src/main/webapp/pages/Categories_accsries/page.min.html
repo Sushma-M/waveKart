@@ -1,0 +1,41 @@
+<style id="Categories_accsries.css">
+
+</style>
+<script id="Categories_accsries.js">
+Application.$controller("Categories_accsriesPageController", ["$scope", function ($scope) {
+    "use strict";
+
+    /* perform any action with the variables inside this block(on-page-load) */
+    $scope.onPageVariablesReady = function () {
+        /*
+         * variables can be accessed through '$scope.Variables' property here
+         * e.g. $scope.Variables.staticVariable1.getData()
+         */
+    };
+    
+    /* perform any action with widgets inside this block */
+    $scope.onPageReady = function () {
+        /*
+         * widgets can be accessed through '$scope.Widgets' property here
+         * e.g. $scope.Widgets.byId(), $scope.Widgets.byName()or access widgets by $scope.Widgets.widgetName
+         */
+    };
+
+}]);
+
+</script>
+<script id="Categories_accsries.variables.json">
+var _Categories_accsriesPage_Variables_ ={};
+</script>
+<script id="Categories_accsries.html" type="text/ng-template">
+<wm-page data-ng-controller="Categories_accsriesPageController" pagetitle="Categories Accsries"> 
+    <wm-header content="header"></wm-header> 
+    <wm-top-nav content="topnav"></wm-top-nav> 
+    <wm-content> 
+        <wm-left-panel columnwidth="2" content="leftnav"></wm-left-panel> 
+        <wm-page-content columnwidth="10"> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer"></wm-footer> 
+</wm-page>
+</script>

@@ -34,7 +34,7 @@
                 </wm-gridrow>
                 <wm-gridrow name="gridrow5">
                     <wm-gridcolumn colwidth="4" name="gridcolumn13">
-                        <wm-livelist listclass="media-list" itemclass="media" name="livelist1" dataset="bind:Variables.smartphones_list.dataSet" width="100%" borderstyle="solid" on-click="goToPage_Products">
+                        <wm-livelist listclass="media-list" itemclass="media" name="livelist1" dataset="bind:Variables.smartphones_list.dataSet" width="100%" borderstyle="solid" on-click="goToPage_Products" paddingleft="5">
                             <wm-listtemplate layout="media" name="listtemplate1">
                                 <wm-container class="media-left" name="container5" horizontalalign="center">
                                     <wm-picture class="media-object picture" width="5em" name="picture8" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.smartphones_list.dataSet.data[$i].imgUrl" height="4em"></wm-picture>
@@ -47,7 +47,7 @@
                         </wm-livelist>
                     </wm-gridcolumn>
                     <wm-gridcolumn colwidth="4" name="gridcolumn14">
-                        <wm-livelist listclass="media-list" itemclass="media" name="livelist2" dataset="bind:Variables.cameras_list.dataSet" on-click="goToPage_Products">
+                        <wm-livelist listclass="media-list" itemclass="media" name="livelist2" dataset="bind:Variables.cameras_list.dataSet" on-click="goToPage_Products" paddingleft="5">
                             <wm-listtemplate layout="media" name="listtemplate2">
                                 <wm-container class="media-left" name="container16">
                                     <wm-picture class="media-object picture" width="5em" name="picture12" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.cameras_list.dataSet.data[$i].imgUrl" height="4em"></wm-picture>
@@ -60,7 +60,7 @@
                         </wm-livelist>
                     </wm-gridcolumn>
                     <wm-gridcolumn colwidth="4" name="gridcolumn15">
-                        <wm-livelist listclass="media-list" itemclass="media" name="livelist3" dataset="bind:Variables.laptops_list.dataSet" on-click="goToPage_Products">
+                        <wm-livelist listclass="media-list" itemclass="media" name="livelist3" dataset="bind:Variables.laptops_list.dataSet" on-click="goToPage_Products" paddingleft="5">
                             <wm-listtemplate layout="media" name="listtemplate3">
                                 <wm-container class="media-left" name="container10">
                                     <wm-picture class="media-object picture" width="5em" name="picture10" height="4em" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.laptops_list.dataSet.data[$i].imgUrl"></wm-picture>
@@ -77,29 +77,17 @@
             <wm-container horizontalalign="left" name="container9">
                 <wm-label caption="Deals" fontsize="20" paddingleft="15" name="Deals"></wm-label>
             </wm-container>
+            <wm-layoutgrid name="layoutgrid3">
+                <wm-gridrow name="gridrow8" paddingleft="10">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn16">
+                        <wm-picture name="picture10_1" width="100%" picturesource="resources/images/imagelists/accessories__category.png" borderright="10" paddingleft="10" paddingright="10" on-click="goToPage_Categories_accsries"></wm-picture>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn17">
+                        <wm-picture name="picture11" width="100%" picturesource="resources/images/imagelists/peripherals_category.png" borderleft="10" paddingleft="10" paddingright="10" on-click="goToPage_Categories_periphrls"></wm-picture>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
         </wm-page-content>
-        <wm-layoutgrid name="layoutgrid3" columns="2" height="60" width="90%">
-            <wm-gridrow name="gridrow8">
-                <wm-gridcolumn colwidth="4" name="gridcolumn10" columnwidth="4">
-                    <wm-picture name="picture4" picturesource="resources/images/imagelists/smartphones_category.png" width="100%" paddingtop="5" paddingbottom="5" paddingright="5" paddingleft="5"></wm-picture>
-                </wm-gridcolumn>
-                <wm-gridrow name="gridrow9">
-                    <wm-gridcolumn colwidth="6" name="gridcolumn22"></wm-gridcolumn>
-                    <wm-gridcolumn colwidth="6" name="gridcolumn23"></wm-gridcolumn>
-                </wm-gridrow>
-                <wm-gridrow name="gridrow10">
-                    <wm-gridcolumn colwidth="6" name="gridcolumn24"></wm-gridcolumn>
-                    <wm-gridcolumn colwidth="6" name="gridcolumn25"></wm-gridcolumn>
-                </wm-gridrow>
-                <wm-gridrow name="gridrow11">
-                    <wm-gridcolumn colwidth="6" name="gridcolumn26"></wm-gridcolumn>
-                    <wm-gridcolumn colwidth="6" name="gridcolumn27"></wm-gridcolumn>
-                </wm-gridrow>
-                <wm-gridrow name="gridrow12">
-                    <wm-gridcolumn colwidth="6" name="gridcolumn28"></wm-gridcolumn>
-                    <wm-gridcolumn colwidth="6" name="gridcolumn29"></wm-gridcolumn>
-                </wm-gridrow>
-        </wm-layoutgrid>
     </wm-content>
     <wm-footer name="footer1" content="footer"></wm-footer>
 </wm-page>

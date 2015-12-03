@@ -1518,5 +1518,23 @@
 		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_Products-wm.NavigationVariable-1449056704834"
+	},
+	"goToPage_Categories_accsries": {
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Categories_accsries",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Categories_accsries-wm.NavigationVariable-1449121157907"
+	},
+	"goToPage_Categories_periphrls": {
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Categories_periphrls",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Categories_periphrls-wm.NavigationVariable-1449121237159"
 	}
 }

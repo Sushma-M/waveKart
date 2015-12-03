@@ -65,7 +65,7 @@ var _CommonPage_Variables_ ={};
                                 <wm-composite name="usernamefield">
                                     <wm-label class="col-md-3" caption="Username" name="usernamelabel"></wm-label>
                                     <wm-container class="col-md-9" name="container1">
-                                        <wm-text placeholder="Enter username" class="col-md-8 app-login-dialog-username" name="usernametext" autocomplete="off" autocorrect="off" autocapitalize="off"></wm-text>
+                                        <wm-text placeholder="Enter Username" class="col-md-8 app-login-dialog-username" name="Username" autocomplete="off" autocorrect="off" autocapitalize="off" type="email"></wm-text>
                                     </wm-container>
                                 </wm-composite>
                             </wm-gridcolumn>
@@ -75,9 +75,24 @@ var _CommonPage_Variables_ ={};
                                 <wm-composite name="passwordfield">
                                     <wm-label class="col-md-3" caption="Password" name="passwordlabel"></wm-label>
                                     <wm-container class="col-md-9" name="container2">
-                                        <wm-text type="password" placeholder="Enter password" class="col-md-8 app-login-dialog-password" name="passwordtext" autocomplete="off" autocorrect="off" autocapitalize="off"></wm-text>
+                                        <wm-text type="password" placeholder="Enter Password" class="col-md-8 app-login-dialog-password" name="passwordtext" autocomplete="off" autocorrect="off" autocapitalize="off"></wm-text>
                                     </wm-container>
                                 </wm-composite>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow3">
+                            <wm-gridcolumn columnwidth="12" name="gridcolumn3">
+                                <wm-list name="list1">
+                                    <wm-list-item name="list_item1">
+                                        <wm-label name="label3" caption="Note:" color="#999"></wm-label>
+                                    </wm-list-item>
+                                    <wm-list-item name="list_item2">
+                                        <wm-label name="testcredentials1" color="#999" caption="Use user@wavemaker.com/user for login as User."></wm-label>
+                                    </wm-list-item>
+                                    <wm-list-item name="list_item3">
+                                        <wm-label name="testcredentials2" color="#999" caption="Use admin@wavemaker.com/admin for login as User."></wm-label>
+                                    </wm-list-item>
+                                </wm-list>
                             </wm-gridcolumn>
                         </wm-gridrow>
                     </wm-layoutgrid>
