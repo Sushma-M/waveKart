@@ -96,6 +96,9 @@
     <property name="city" type="string">
       <column name="`CITY`" length="255" not-null="true" precision="19"/>
     </property>
+    <property name="role" type="string">
+      <column name="`ROLE`" length="255" not-null="true" precision="19"/>
+    </property>
     <set name="itemorders" table="ITEMORDER" inverse="true" lazy="true" fetch="select">
       <key>
         <column name="`USER_ID`"/>

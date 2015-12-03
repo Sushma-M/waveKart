@@ -49,13 +49,13 @@ var _topnavPage_Variables_ ={
                 <wm-anchor caption="Home" name="homeButton" iconclass="glyphicon glyphicon-home" on-click="goToPage_Main" show="bind:Variables.loggedInUser.dataSet.roles !=&quot;admin&quot;"></wm-anchor>
             </wm-nav-item>
             <wm-nav-item name="list_services">
-                <wm-anchor caption="Products" name="ProductsPage" iconclass="glyphicon glyphicon-tag" show="bind:Variables.loggedInUser.dataSet.roles!=&quot;admin&quot;"></wm-anchor>
+                <wm-anchor caption="Products" name="ProductsPage" iconclass="glyphicon glyphicon-tag" show="bind:Variables.loggedInUser.dataSet.roles!=&quot;admin&quot;" on-click="goToPage_Categories"></wm-anchor>
             </wm-nav-item>
             <wm-nav-item name="nav_item5">
                 <wm-anchor on-click="goToPage_Admin" caption="Admin" iconclass="glyphicon glyphicon-user" name="AdminPage" accessroles="admin"></wm-anchor>
             </wm-nav-item>
             <wm-nav-item name="nav_item6">
-                <wm-anchor caption="Login" iconclass="glyphicon glyphicon-log-in" name="Login" on-click="CommonLoginDialog.show"></wm-anchor>
+                <wm-anchor caption="Login" iconclass="glyphicon glyphicon-log-in" name="Login" on-click="CommonLoginDialog.show" show="bind:!Variables.loggedInUser.dataSet.isAuthenticated"></wm-anchor>
             </wm-nav-item>
         </wm-nav>
         <wm-nav name="rightTopLinks" type="navbar" class="navbar-right">

@@ -31,6 +31,7 @@
             <element name="password" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="country" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="city" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="role" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="itemorders" typeRef="com.eshop.eshopping.Itemorder" isList="true" allowNull="true"/>
             <element name="productorders" typeRef="com.eshop.eshopping.Productorder" isList="true" allowNull="true"/>
         </dataobject>

@@ -49,7 +49,7 @@ Application.$controller("CommonLoginDialogController", ["$scope", "DialogService
 ]);
 </script>
 <script id="Common.variables.json">
-var _CommonPage_Variables_ ={};
+var _CommonPage_Variables_ ={}
 </script>
 <script id="Common.html" type="text/ng-template">
 <wm-partial data-ng-controller="CommonPageController" name="CommonPage">
@@ -65,7 +65,7 @@ var _CommonPage_Variables_ ={};
                                 <wm-composite name="usernamefield">
                                     <wm-label class="col-md-3" caption="Username" name="usernamelabel"></wm-label>
                                     <wm-container class="col-md-9" name="container1">
-                                        <wm-text placeholder="Enter Username" class="col-md-8 app-login-dialog-username" name="Username" autocomplete="off" autocorrect="off" autocapitalize="off" type="email"></wm-text>
+                                        <wm-text placeholder="Enter Username" class="col-md-8 app-login-dialog-username" name="usernametext" autocomplete="off" autocorrect="off" autocapitalize="off" type="text" required="true"></wm-text>
                                     </wm-container>
                                 </wm-composite>
                             </wm-gridcolumn>
@@ -75,7 +75,7 @@ var _CommonPage_Variables_ ={};
                                 <wm-composite name="passwordfield">
                                     <wm-label class="col-md-3" caption="Password" name="passwordlabel"></wm-label>
                                     <wm-container class="col-md-9" name="container2">
-                                        <wm-text type="password" placeholder="Enter Password" class="col-md-8 app-login-dialog-password" name="passwordtext" autocomplete="off" autocorrect="off" autocapitalize="off"></wm-text>
+                                        <wm-text type="password" placeholder="Enter Password" class="col-md-8 app-login-dialog-password" name="passwordtext" autocomplete="off" autocorrect="off" autocapitalize="off" required="true"></wm-text>
                                     </wm-container>
                                 </wm-composite>
                             </wm-gridcolumn>
@@ -99,7 +99,7 @@ var _CommonPage_Variables_ ={};
                 </wm-form>
             </wm-dialogcontent>
             <wm-dialogactions name="loginactions">
-                <wm-button class="btn-primary" caption="Sign in" name="loginbutton"></wm-button>
+                <wm-button class="btn-primary" caption="Sign in" name="loginbutton" on-click="loginVariable"></wm-button>
             </wm-dialogactions>
         </wm-logindialog>
     </wm-view>

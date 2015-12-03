@@ -345,6 +345,7 @@
 		}
 	},
 	"cameras_list": {
+		"name": "cameras_list",
 		"type": "Product",
 		"isList": false,
 		"owner": "Page",

@@ -94,8 +94,29 @@
 		"dataBinding": [
 			{
 				"name": "dataBinding",
-				"type": "object",
-				"fields": []
+				"type": "ITEMORDER",
+				"fields": [
+					{
+						"name": "id",
+						"type": "number"
+					},
+					{
+						"name": "product",
+						"type": "number"
+					},
+					{
+						"name": "status",
+						"type": "string"
+					},
+					{
+						"name": "user",
+						"type": "number"
+					},
+					{
+						"name": "quantity",
+						"type": "number"
+					}
+				]
 			}
 		],
 		"saveInPhonegap": false,
@@ -454,6 +475,20 @@
 							"generator": "assigned",
 							"isRelated": false,
 							"defaultValue": null
+						},
+						{
+							"fieldName": "role",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "ROLE",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"precision": 19,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
 						}
 					],
 					"relatedFieldName": "user.id",
@@ -480,7 +515,8 @@
 			"entityName": "Itemorder",
 			"fullyQualifiedName": "com.eshop.eshopping.Itemorder",
 			"tableType": "TABLE"
-		}
+		},
+		"filterFields": {}
 	},
 	"EshoppingOrderdetailData": {
 		"name": "EshoppingOrderdetailData",
@@ -1175,6 +1211,20 @@
 							"generator": "assigned",
 							"isRelated": false,
 							"defaultValue": null
+						},
+						{
+							"fieldName": "role",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "ROLE",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"precision": 19,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
 						}
 					],
 					"relatedFieldName": "user.id",
@@ -1379,6 +1429,20 @@
 					"generator": "assigned",
 					"isRelated": false,
 					"defaultValue": null
+				},
+				{
+					"fieldName": "role",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "ROLE",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"precision": 19,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
 				}
 			],
 			"primaryKeys": [
@@ -1405,18 +1469,20 @@
 				"fields": [
 					{
 						"name": "username",
-						"type": "string"
+						"type": "string",
+						"value": "bind:Widgets.Username.datavalue"
 					},
 					{
 						"name": "password",
-						"type": "string"
+						"type": "string",
+						"value": "bind:Widgets.passwordtext.datavalue"
 					}
 				]
 			}
 		],
 		"saveInPhonegap": false,
 		"startUpdate": false,
-		"autoUpdate": false,
+		"autoUpdate": true,
 		"inFlightBehavior": "executeLast",
 		"transformationRequired": false,
 		"onSuccess": "goToPage_Main",
@@ -1478,6 +1544,7 @@
 		"_id": "wm-goToPage_Products-wm.NavigationVariable-1449056704834"
 	},
 	"goToPage_Categories_accsries": {
+		"name": "goToPage_Categories_accsries",
 		"owner": "App",
 		"operation": "gotoPage",
 		"pageName": "Categories_accsries",
@@ -1487,6 +1554,7 @@
 		"_id": "wm-goToPage_Categories_accsries-wm.NavigationVariable-1449121157907"
 	},
 	"goToPage_Categories_periphrls": {
+		"name": "goToPage_Categories_periphrls",
 		"owner": "App",
 		"operation": "gotoPage",
 		"pageName": "Categories_periphrls",
@@ -1494,5 +1562,25 @@
 		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_Categories_periphrls-wm.NavigationVariable-1449121237159"
+	},
+	"goToPage_Categories_Camera": {
+		"name": "goToPage_Categories_Camera",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Categories_Camera",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Categories_Camera-wm.NavigationVariable-1449139104340"
+	},
+	"goToPage_Categories_laptop": {
+		"name": "goToPage_Categories_laptop",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Categories_laptop",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Categories_laptop-wm.NavigationVariable-1449139274242"
 	}
 }
