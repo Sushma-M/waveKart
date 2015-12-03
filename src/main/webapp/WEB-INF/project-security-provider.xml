@@ -20,7 +20,7 @@
         <security:intercept-url pattern="/pages/Admin/**" access="hasAnyRole('ROLE_admin')"/>
         <security:intercept-url pattern="/pages/Cart/**" access="hasAnyRole('ROLE_user')"/>
         <security:intercept-url pattern="/pages/Categories/**" access="permitAll"/>
-        <security:intercept-url pattern="/pages/Categories_Camera/**" access="permitAll"/>
+        <security:intercept-url pattern="/pages/Categories_Cameras/**" access="permitAll"/>
         <security:intercept-url pattern="/pages/Categories_accsries/**" access="permitAll"/>
         <security:intercept-url pattern="/pages/Categories_laptop/**" access="permitAll"/>
         <security:intercept-url pattern="/pages/Categories_periphrls/**" access="permitAll"/>

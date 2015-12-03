@@ -963,7 +963,7 @@
 			"fullyQualifiedName": "com.eshop.eshopping.Product",
 			"tableType": "TABLE"
 		},
-		"bindCount": 2,
+		"bindCount": 1,
 		"filterFields": {}
 	},
 	"EshoppingProductorderData": {
@@ -1563,16 +1563,6 @@
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_Categories_periphrls-wm.NavigationVariable-1449121237159"
 	},
-	"goToPage_Categories_Camera": {
-		"name": "goToPage_Categories_Camera",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "Categories_Camera",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_Categories_Camera-wm.NavigationVariable-1449139104340"
-	},
 	"goToPage_Categories_laptop": {
 		"name": "goToPage_Categories_laptop",
 		"owner": "App",
@@ -1582,5 +1572,25 @@
 		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_Categories_laptop-wm.NavigationVariable-1449139274242"
+	},
+	"goToPage_Categories_Cameras": {
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Categories_Cameras",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Categories_Cameras-wm.NavigationVariable-1449147766571",
+		"name": "goToPage_Categories_Cameras"
+	},
+	"goToPage_Product_search": {
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Product_search",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Product_search-wm.NavigationVariable-1449150127777",
+		"name": "goToPage_Product_search"
 	}
 }

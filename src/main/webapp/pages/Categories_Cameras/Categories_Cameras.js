@@ -1,4 +1,4 @@
-Application.$controller("Categories_CameraPageController", ["$scope", function ($scope) {
+Application.$controller("Categories_CamerasPageController", ["$scope", function ($scope) {
     "use strict";
 
     /* perform any action with the variables inside this block(on-page-load) */
