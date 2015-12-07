@@ -37,7 +37,7 @@ var _headerPage_Variables_ ={}
                 <wm-label color="#d1d039" caption="waveKart" class="application-name" name="ApplicationName" fontsize="20"></wm-label>
             </wm-gridcolumn>
             <wm-gridcolumn name="headerright" horizontalalign="right" verticalalign="middle" columnwidth="5" paddingunit="em" paddingtop="1" paddingright="1">
-                <wm-search width="80%" name="siteSearch" displayimagesrc="imgUrl" on-submit="goToPage_Product_search"></wm-search>
+                <wm-search width="80%" name="siteSearch" on-submit="goToPage_Product_search" dataset="bind:Variables.EshoppingProductData.dataSet" searchkey="name" displaylabel="name" datafield="id"></wm-search>
             </wm-gridcolumn>
         </wm-gridrow>
     </wm-layoutgrid>
