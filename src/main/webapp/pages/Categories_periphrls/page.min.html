@@ -25,17 +25,200 @@ Application.$controller("Categories_periphrlsPageController", ["$scope", functio
 
 </script>
 <script id="Categories_periphrls.variables.json">
-var _Categories_periphrlsPage_Variables_ ={};
+var _Categories_periphrlsPage_Variables_ ={
+	"Product_peripherals": {
+		"type": "Product",
+		"isList": false,
+		"owner": "Page",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [
+			{
+				"name": "dataBinding",
+				"type": "PRODUCT",
+				"fields": [
+					{
+						"name": "id",
+						"type": "number"
+					},
+					{
+						"name": "imgUrl",
+						"type": "string"
+					},
+					{
+						"name": "category",
+						"type": "string",
+						"value": "Peripherals"
+					},
+					{
+						"name": "price",
+						"type": "number"
+					},
+					{
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "availability",
+						"type": "boolean"
+					}
+				]
+			}
+		],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 6,
+		"designMaxResults": 6,
+		"operation": "read",
+		"startUpdate": true,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"liveSource": "eshopping",
+		"ignoreCase": false,
+		"matchMode": "start",
+		"filterFields": {},
+		"category": "wm.LiveVariable",
+		"_id": "wm-Product_peripherals-wm.LiveVariable-1449471162380",
+		"package": "com.eshop.eshopping.Product",
+		"tableName": "PRODUCT",
+		"tableType": "TABLE",
+		"propertiesMap": {
+			"columns": [
+				{
+					"fieldName": "id",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "ID",
+					"isPrimaryKey": true,
+					"notNull": true,
+					"length": 255,
+					"precision": 19,
+					"generator": "identity",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "imgUrl",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "IMG_URL",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"precision": 19,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "category",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "CATEGORY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"precision": 19,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "price",
+					"type": "double",
+					"hibernateType": "double",
+					"fullyQualifiedType": "double",
+					"columnName": "PRICE",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"precision": 64,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "description",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "DESCRIPTION",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"precision": 19,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "name",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "NAME",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"precision": 19,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "availability",
+					"type": "boolean",
+					"hibernateType": "boolean",
+					"fullyQualifiedType": "boolean",
+					"columnName": "AVAILABILITY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"precision": 19,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				}
+			],
+			"primaryKeys": [
+				"id"
+			],
+			"entityName": "Product",
+			"fullyQualifiedName": "com.eshop.eshopping.Product",
+			"tableType": "TABLE"
+		}
+	}
+}
 </script>
 <script id="Categories_periphrls.html" type="text/ng-template">
-<wm-page data-ng-controller="Categories_periphrlsPageController" pagetitle="Categories Periphrls"> 
-    <wm-header content="header"></wm-header> 
-    <wm-top-nav content="topnav"></wm-top-nav> 
-    <wm-content> 
-        <wm-left-panel columnwidth="2" content="leftnav"></wm-left-panel> 
-        <wm-page-content columnwidth="10"> 
-        </wm-page-content> 
-    </wm-content> 
-    <wm-footer content="footer"></wm-footer> 
+<wm-page data-ng-controller="Categories_periphrlsPageController" pagetitle="Categories Periphrls" name="page1">
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav>
+    <wm-content name="content1">
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel>
+        <wm-page-content columnwidth="10" name="page_content1">
+            <wm-livelist listclass="list-group" name="livelist1" dataset="bind:Variables.Product_peripherals.dataSet" itemsperrow="3" navigation="Advanced">
+                <wm-listtemplate layout="thumbnail" name="listtemplate1">
+                    <wm-container class="thumbnail" name="container3" height="170px">
+                        <wm-picture class="picture" shape="thumbnail" height="5em" name="picture2" width="5em" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.Product_peripherals.dataSet.data[$i].imgUrl"></wm-picture>
+                        <wm-container class="caption" data-template-ctr="true" name="container4">
+                            <wm-label width="100%" caption="bind:Variables.Product_peripherals.dataSet.name" name="label6" fontweight="bold"></wm-label>
+                            <wm-label width="100%" caption="bind:&quot;$&quot;+Variables.Product_peripherals.dataSet.data[$i].price" name="label4" fontweight="bold"></wm-label>
+                        </wm-container>
+                    </wm-container>
+                </wm-listtemplate>
+            </wm-livelist>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
 </wm-page>
 </script>
